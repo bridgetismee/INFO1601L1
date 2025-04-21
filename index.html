@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="description" content="My first website">
+        <meta name="keywords" content="INFO1601, uwi, web">
+        <title>My First Page</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+        
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall page setup */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+article {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Figure and image styling */
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Details section and list styling */
+details {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+ul li {
+    background-color: #bdc3c7;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Dialog styling */
+dialog {
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+    <body>
+        <header>
+            <h1>This is my first website</h1>
+        </header>
+
+        <article>
+            <section>
+                <h2>Welcome</h2>
+            </section>
+
+           <section>
+                <figure>
+                    <img src="https://cataas.com/cat" alt="a random cat">
+                    <figcaption>Fig 1. A random cat</figcaption>
+                </figure>
+           </section>
+
+           <section>
+               <details>
+                   <summary>Hobbies</summary>
+                   <ul>
+                    <li>Swimming</li>
+                    <li>Coding</li>
+                    <li>Music</li>
+                    <li>Memeing</li>
+                </ul>
+               </details>
+            </section>
+
+            <dialog id="mydialog">
+                This is a dialog
+                <a href="javascript:mydialog.removeAttribute('open')">close</a>
+            </dialog>
+
+            <a href="javascript:document.querySelector('#mydialog').setAttribute('open', true)">
+                Open Dialog
+            </a>
+
+        </article>
+           
+    </body>
+<html>
